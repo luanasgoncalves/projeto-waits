@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Contato</title>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Contato</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+    form{
+      width:400px;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea{
+      width:100%;
+      padding:10px;
+      margin-top:5px;
+      margin-bottom:15px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      box-sizing:border-box;
+    }
+    textarea{
+      height:120px;
+      resize:none;
+    }
+    button{
+      width:100%;
+      padding:12px;
+      border:none;
+      background:#007bff;
+      color:white;
+      border-radius:5px;
+      cursor:pointer;
+    }
+    button:hover{
+      background:#0056b3;
+    }
+  </style>
 </head>
 <body>
-    <table>
-    <form action="index.html">
-        <label for="Nome">Nome:</label>
-        <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required>
-        <label for="Telefone">Telefone</label>
-        <input type="Telefone" id="Telefone" name="Telefone" placeholder="Digite seu telefone" required>
-        <label for="Email">Email</label>
-        <input type="email" id="Email" name="email" placeholder="Digite seu e-mail" required>
-        <label for="Email">Email</label>
-        <input type="Mensagem:" id="Mensagem" name="Mensagem" placeholder="Insira aqui uma mensagem" required>
-        <button type="submit">Enviar</button>
-    </form>
-    </table>
-    </head><body>
+  <form action="index.html">
+    <label>Nome:</label>
+    <input type="text" placeholder="Digite seu nome" required>
+    <label>Telefone:</label>
+    <input type="text"
+      oninput="this.value=this.value.replace(/\D/g,'')"
+      placeholder="Digite seu telefone"
+      required>
+    <label>Email:</label>
+    <input type="email"
+      placeholder="Digite seu e-mail"
+      required>
+    <label>Mensagem:</label>
+    <textarea placeholder="Insira aqui sua mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>
