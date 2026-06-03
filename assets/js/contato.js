@@ -1,47 +1,50 @@
-document.addEventListener("DOMContentLoaded", () => {
+function enviarFormulario() {
 
-    const input = document.querySelector("#telefone");
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const iti = window.intlTelInput(input, {
-        initialCountry: "br",
-        preferredCountries: ["br", "pt", "us"],
-        separateDialCode: true
-    });
-    input.addEventListener("keydown", function (e) {
+        const input = document.querySelector("#telefone");
 
-        const teclasPermitidas = [
-            "Backspace",
-            "Delete",
-            "ArrowLeft",
-            "ArrowRight",
-            "Tab",
-            "Home",
-            "End"
-        ];
+        const iti = window.intlTelInput(input, {
+            initialCountry: "br",
+            preferredCountries: ["br", "pt", "us"],
+            separateDialCode: true
+        });
+        input.addEventListener("keydown", function (e) {
 
-        if (
-            teclasPermitidas.includes(e.key) ||
-            /^\d$/.test(e.key)
-        ) {
-            return;
-        }
+            const teclasPermitidas = [
+                "Backspace",
+                "Delete",
+                "ArrowLeft",
+                "ArrowRight",
+                "Tab",
+                "Home",
+                "End"
+            ];
 
-        e.preventDefault();
-    });
-    input.addEventListener("input", function () {
-        this.value = this.value.replace(/\D/g, "");
-    });
-
-    document.getElementById("formulario")
-        .addEventListener("submit", function (e) {
-
-            if (!iti.isValidNumber()) {
-                e.preventDefault();
-                alert("Digite um telefone válido.");
+            if (
+                teclasPermitidas.includes(e.key) ||
+                /^\d$/.test(e.key)
+            ) {
                 return;
             }
 
-            alert("Formulário enviado com sucesso!");
+            e.preventDefault();
+        });
+        input.addEventListener("input", function () {
+            this.value = this.value.replace(/\D/g, "");
         });
 
-});
+        document.getElementById("formulario")
+            .addEventListener("submit", function (e) {
+
+                if (!iti.isValidNumber()) {
+                    e.preventDefault();
+                    alert("Digite um telefone válido.");
+                    return;
+                }
+
+                alert("Formulário enviado com sucesso!");
+            });
+
+    });
+}
