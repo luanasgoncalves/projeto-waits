@@ -116,8 +116,10 @@ section.carrossel {
 
 .nav-manual .manual-btn, .nav-auto div {
     border: 1px solid #1ba3ec;
-    padding: 10px;
+    width: 12px;  
+    height: 12px;
     border-radius: 50%;
+    box-sizing: border-box; /* garante que a borda não altere o tamanho */
     cursor: pointer; /* quando o usuário passar o mouse por cima das bolinhas vira o dedinho de clicar */
     transition: 0.2s; /* animação bonitinha pra quando o usuário passar o mouse */
 }
