@@ -104,14 +104,14 @@ section.carrossel {
     width: 100%;
 }
 
-.nav-manual {
+.nav-manual, .nav-auto {
     position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
     width: 100%;
     margin-top: 35%;
     justify-content: center;
 }
 
-.nav-manual .manual-btn {
+.nav-manual .manual-btn, .nav-auto div {
     border: 1px solid #1ba3ec;
     padding: 10px;
     border-radius: 50%;
@@ -121,7 +121,7 @@ section.carrossel {
 
 /* a classe NOT exclui o elemento desejado das configurações que serão feitas. nesse caso, excluímos a última bolinha pq senão ela ia ficar
 descentralizada */
-.nav-manual .manual-btn:not(:last-child) { 
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) { 
     margin-right: 10px;
 }
 
