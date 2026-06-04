@@ -90,12 +90,12 @@ section.carrossel {
     display: flex;
 }
 
-#botao1, #botao2, #botao3, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
+.carrossel-content input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
     display: none;
 }
 
 .slide-box {
-    width: 33%;
+    width: 25%;
     height: auto;
     position: relative;
     text-align: center;
@@ -103,12 +103,10 @@ section.carrossel {
 
 .slide-box img {
     width: 100%;
-    display: block;
 }
 
 .nav-manual, .nav-auto {
     position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
-    bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
