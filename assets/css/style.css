@@ -95,7 +95,7 @@ section.carrossel {
 }
 
 .slide-box {
-    width: 25%;
+    width: 33.333%;
     height: auto;
     position: relative;
     text-align: center;
@@ -107,9 +107,11 @@ section.carrossel {
 
 .nav-manual, .nav-auto {
     position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
+    bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 .nav-manual .manual-btn, .nav-auto div {
