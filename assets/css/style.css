@@ -13,6 +13,7 @@ nav {
     font-size: x-large;    
 }
 
+
 main {
     margin: 20px;
 }
@@ -73,3 +74,46 @@ li {
     margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
 } */
+
+section.carrossel {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important; /*  regra utilizada para adicionar importância a uma propriedade/valor */
+    overflow: hidden;
+}
+
+.carrossel-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.carrossel-content input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual {
+    position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
+    width: 100%;
+    margin-top: 35%;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn {
+    border: 1px solid #1ba3ec;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer; /* quando o usuário passar o mouse por cima das bolinhas vira o dedinho de clicar */
+}
