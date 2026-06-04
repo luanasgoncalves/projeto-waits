@@ -22,7 +22,31 @@
         </nav>
     </header>
     <main>
-        <div id="carrossel"></div>
+        <!-- <div id="carrossel"></div> -->
+        <!-- seção que engloba todo o carrossel -->
+         <section class="carrossel">
+            <!-- div para o conteúdo do carrossel -->
+            <div class="carrossel-content">
+                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções 
+                 de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
+                <input type="radio" name="btn-radio" id="botao1"> <!-- usei btn por padrão mas da pra por qualquer nome -->
+                <input type="radio" name="btn-radio" id="botao2"> 
+                <input type="radio" name="btn-radio" id="botao3"> 
+
+                <div class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
+                    <img class="imagem-desktop" src="assets/img/slide1-web.png" alt="slide 1">
+                    <img class="imagem-mobile" src="assets/img/slide1-mobile.png" alt="slide 1">
+                </div>
+                <div class="slide-box"> <!-- adicionando a segunda imagem -->
+                    <img class="imagem-desktop" src="assets/img/slide2-web.png" alt="slide 2">
+                    <img class="imagem-mobile" src="assets/img/slide2-mobile.png" alt="slide 2">
+                </div>
+                <div class="slide-box"> <!-- adicionando a terceira imagem -->
+                    <img class="imagem-desktop" src="assets/img/slide3-web.png" alt="slide 3">
+                    <img class="imagem-mobile" src="assets/img/slide3-mobile.png" alt="slide 3">
+                </div>
+            </div>
+        </section>
         <section id="sobre">
             <h2>O que é o Waits?</h2>
             <p>O Projeto Waits surge a partir da pesquisa Monitoramento da qualidade da água do Delta do Jacuí, Lago Guaíba: utilização de equipamentos portáteis e de um sistema de coleta multiparâmetros de baixo custo operacional, desenvolvido em uma parceria entre o Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS), Campus Porto Alegre, e Cégep de Sherbrooke, Canadá.</p>
