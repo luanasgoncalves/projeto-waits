@@ -81,10 +81,11 @@ section.carrossel {
     height: auto;
     padding: 0 !important; /*  regra utilizada para adicionar importância a uma propriedade/valor */
     overflow: hidden;
+    position: relative;
 }
 
 .carrossel-content {
-    width: 400%;
+    width: 300%;
     height: auto;
     display: flex;
 }
@@ -94,7 +95,7 @@ section.carrossel {
 }
 
 .slide-box {
-    width: 25%;
+    width: 33%;
     height: auto;
     position: relative;
     text-align: center;
@@ -102,12 +103,14 @@ section.carrossel {
 
 .slide-box img {
     width: 100%;
+    display: block;
 }
 
 .nav-manual, .nav-auto {
     position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
+    bottom: 20px;
     width: 100%;
-    margin-top: 35%;
+    display: flex;
     justify-content: center;
 }
 
