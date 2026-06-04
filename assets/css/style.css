@@ -24,13 +24,13 @@ footer {
     text-align: end;
 }
 
-section {
+/* section {
     padding: 10px 40px;
     text-align: justify;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin: 20px;
-}
+} */
 
 h1 {
     margin: 0 10px;
