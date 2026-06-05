@@ -142,8 +142,8 @@ descentralizada */
     margin-left: 0%;
 }
 #radio2:checked ~ .primeiro {
-    margin-left: -20%;
+    margin-left: -50%;
 }
 #radio1:checked ~ .primeiro {
-    margin-left: -50%;
+    margin-left: -100%;
 }
