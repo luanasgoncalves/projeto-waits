@@ -134,7 +134,8 @@ descentralizada */
     background-color: #1ba3ec;
 }
 
-/* faz com que quando os botões forem apertados, mude de cor */
+/* faz com que quando os botões forem apertados, mude de cor. o ~ permite estilizar um elemento quando ele é precedido por um elemento específico, 
+desde que ambos compartilhem o mesmo pai */
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
     background-color: #1ba3ec;
 }
