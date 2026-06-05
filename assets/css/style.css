@@ -137,3 +137,13 @@ descentralizada */
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
     background-color: #1ba3ec;
 }
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+#radio1:checked ~ .primeiro {
+    margin-left: -50%;
+}
