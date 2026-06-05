@@ -132,3 +132,8 @@ descentralizada */
 .nav-manual .manual-btn:hover { /* o hover é pra quando o usuário passar o mouse por cima */
     background-color: #1ba3ec;
 }
+
+/* faz com que quando os botões forem apertados, mude de cor */
+#botao1:checked ~ .nav-auto .auto-btn1, #botao2:checked ~ .nav-auto .auto-btn2, #botao3:checked ~ .nav-auto .auto-btn3{
+    background-color: #1ba3ec;
+}
