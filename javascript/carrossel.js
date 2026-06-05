@@ -1,7 +1,7 @@
 let radio = document.querySelector('.manual-btn');
 let cont = 1; // contador das imagens
 
-document.getElementById('botao1').checked = true; 
+document.getElementById('radio1').checked = true; 
 
 // função para definir o tempo que cada imagem fica antes de passar para próxima (5 segundos)
 setInterval(() => {
@@ -15,5 +15,5 @@ function proximaImagem() {
         cont = 1;
     }; 
 
-    document.getElementById('botao1' + cont).checked = true;
+    document.getElementById('radio' + cont).checked = true;
 }

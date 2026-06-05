@@ -24,7 +24,7 @@ footer {
     text-align: end;
 }
 
-section {
+#sobre {
     padding: 10px 40px;
     text-align: justify;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -134,6 +134,6 @@ descentralizada */
 }
 
 /* faz com que quando os botões forem apertados, mude de cor */
-#botao1:checked ~ .nav-auto .auto-btn1, #botao2:checked ~ .nav-auto .auto-btn2, #botao3:checked ~ .nav-auto .auto-btn3{
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
     background-color: #1ba3ec;
 }
