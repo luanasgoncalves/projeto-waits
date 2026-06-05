@@ -15,5 +15,5 @@ function proximaImagem() {
         cont = 1;
     }; 
 
-    document.getElementById('botao' + cont).checked = true;
+    document.getElementById('botao1' + cont).checked = true;
 }
