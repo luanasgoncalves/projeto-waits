@@ -15,5 +15,5 @@ function proximaImagem() {
         cont = 1;
     }; 
 
-    document.getElementById('radio1' + cont).checked = true;
+    document.getElementById('radio' + cont).checked = true;
 }
