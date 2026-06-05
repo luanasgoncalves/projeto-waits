@@ -85,7 +85,7 @@ section.carrossel {
 }
 
 .carrossel-content {
-    width: 300%;
+    width: 400%;
     height: auto;
     display: flex;
 }
@@ -95,7 +95,7 @@ section.carrossel {
 }
 
 .slide-box {
-    width: 33.333%;
+    width: 25%;
     height: auto;
     position: relative;
     text-align: center;
@@ -143,7 +143,7 @@ descentralizada */
     margin-left: 0%;
 }
 #radio2:checked ~ .primeiro {
-    margin-left: -33%;
+    margin-left: -25%;
 }
 #radio1:checked ~ .primeiro {
     margin-left: -50%;
