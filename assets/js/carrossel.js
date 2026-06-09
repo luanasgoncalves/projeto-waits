@@ -5,11 +5,11 @@ document.getElementById('radio1').checked = true;
 
 // função para definir o tempo que cada imagem fica antes de passar para próxima (5 segundos)
 setInterval(() => {
+    cont++;
     proximaImagem()
 }, 5000);
 
 function proximaImagem() {
-    cont++;
 
     if(cont > 3) {
         cont = 1;
