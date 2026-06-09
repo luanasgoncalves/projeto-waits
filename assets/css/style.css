@@ -37,8 +37,12 @@ h1 {
     font-size: 0;
 }
 
+h2 {
+    font-size: xx-large;
+}
+
 p {
-    font-size: large;
+    font-size: larger;
 }
 
 li {
