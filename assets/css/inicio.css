@@ -1,0 +1,82 @@
+/* #carrossel {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+} */
+
+section.carrossel {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important; /*  regra utilizada para adicionar importância a uma propriedade/valor */
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.carrossel-content input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual, .nav-auto {
+    position: absolute; /* faz com que a posição fique limitada a position relative da slide-box */
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid #ffffff;
+    width: 12px;  
+    height: 12px;
+    border-radius: 50%;
+    box-sizing: border-box; /* garante que a borda não altere o tamanho */
+    cursor: pointer; /* quando o usuário passar o mouse por cima das bolinhas vira o dedinho de clicar */
+    transition: 0.2s; /* animação bonitinha pra quando o usuário passar o mouse */
+}
+
+/* a classe NOT exclui o elemento desejado das configurações que serão feitas. nesse caso, excluímos a última bolinha pq senão ela ia ficar
+descentralizada */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) { 
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover { /* o hover é pra quando o usuário passar o mouse por cima */
+    background-color: #fbfbfc;
+}
+
+/* faz com que quando os botões forem apertados, mude de cor. o ~ permite estilizar um elemento quando ele é precedido por um elemento específico, 
+desde que ambos compartilhem o mesmo pai */
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #f6f7f8;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
