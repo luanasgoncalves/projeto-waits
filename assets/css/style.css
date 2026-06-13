@@ -1,25 +1,6 @@
-#ondinhas {
-    position: absolute;
-    z-index: 1;
-    /*
-    width: 100vw;
-    height: 300px;
-    background: url("/assets/img/gemini2.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 300px; */
-  /* top:0; */
-  width: 100vw;
-  height: 450px;
-  /* border: 2px solid black; */
-  /* padding: 25px; */
-  background: url("/assets/img/ondinhas_header.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 450px;
-}
-
 body {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-family:Arial, Helvetica, sans-serif
 }
 
 header {
@@ -31,25 +12,30 @@ nav {
     font-size: x-large;    
 }
 
-
 main {
-    margin-top: 100px;
+    margin-top: 50px;
     min-height: 33vw; 
 }
 
+section {
+    margin: 80px 80px;
+}
+
+article {
+    padding: 10px 40px;
+    text-align: justify;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 20px;
+    min-width: 300px;
+    min-height: 150px;
+} 
+
 footer {
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
     padding: 0 30px;
     text-align: end;
 }
-
-#sobre {
-    padding: 10px 40px;
-    text-align: justify;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    margin: 20px;
-} 
 
 h1 {
     margin: 0 10px;
@@ -58,6 +44,10 @@ h1 {
 
 h2 {
     font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
 }
 
 p {
@@ -70,7 +60,8 @@ li {
 }
 
 .navbar {
-    display: flex;
+    display: inline-flex;
+    ;
 }
 
 .link {
@@ -84,6 +75,22 @@ li {
 .link:hover {
     text-decoration: none;
     color: rgb(250, 244, 244);
+}
+
+.cards-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ondinhas {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 450px;
+    background: url("/assets/img/ondinhas_header.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
 }
 
 #logo {
