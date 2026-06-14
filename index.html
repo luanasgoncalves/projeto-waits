@@ -31,65 +31,70 @@
          <section class="carrossel">
             <!-- div para o conteúdo do carrossel -->
             <div class="carrossel-content">
-                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções 
-                 de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
+                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
                 <input type="radio" name="btn-radio" id="radio1"> <!-- usei btn por padrão mas da pra por qualquer nome -->
                 <input type="radio" name="btn-radio" id="radio2"> 
                 <input type="radio" name="btn-radio" id="radio3"> 
 
-                <div class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
+                <article class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
                     <img class="imagem-desktop" src="/assets/img/slide1-web.png" alt="slide 1">
                     <img class="imagem-mobile" src="/assets/img/slide1-mobile.png" alt="slide 1">
-                </div>
-                <div class="slide-box"> <!-- adicionando a segunda imagem -->
+                </article>
+                <article class="slide-box"> <!-- adicionando a segunda imagem -->
                     <img class="imagem-desktop" src="/assets/img/slide2-web.png" alt="slide 2">
                     <img class="imagem-mobile" src="/assets/img/slide2-mobile.png" alt="slide 2">
-                </div>
-                <div class="slide-box"> <!-- adicionando a terceira imagem -->
+                </article>
+                <article class="slide-box"> <!-- adicionando a terceira imagem -->
                     <img class="imagem-desktop" src="/assets/img/slide3-web.png" alt="slide 3">
                     <img class="imagem-mobile" src="/assets/img/slide3-mobile.png" alt="slide 3">
-                </div>
+                </article>
             </div>
 
             <div class="nav-auto"> <!-- nav-auto = navegação automatica. efeito das bolinhas -->
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-
-                <div class="nav-manual"> <!-- navegação manual pro usuário -->
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual"> <!-- navegação manual pro usuário -->
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
         </section>
+
         <section class="cards">
-            <h2>O que é o Waits?</h2>
+            <h2>Seção de Cards</h2>
             <div class="cards-content">
-                <article id="card1">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <h3>Card 1</h3>
-                    <p>Texto</p>
+                <article id="card1"><a href="/">
+                    
+                            <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                        <div class="cards-text">
+                            <h3>Card 1</h3>
+                            <p>Texto</p>
+                        </div>
+                </a>
                 </article>
-                <article id="card2">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <h3>Card 2</h3>
-                    <p>Texto</p>
+                <article id="card2"><a href="/">
+                    
+                        <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                        <div class="cards-text">
+                            <h3>Card 2</h3>
+                            <p>Texto</p>
+                        </div>
+                </a>
                 </article>
-                <article id="card3">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <h3>Card 3</h3>
-                    <p>Texto</p>
+                <article id="card3"><a href="/">
+                    
+                        <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                        <div class="cards-text">
+                            <h3>Card 3</h3>
+                            <p>Texto</p>
+                        </div>
+                </a>
                 </article>
             </div>
         </section>
-    </main>
+    </main><hr>
 
     <footer><p> &copy; 2026 - Desenvolvido por Bárbara da Silva Menger, João Vithor de Souza Baez e Luana da Silva Gonçalves</p></footer>
     

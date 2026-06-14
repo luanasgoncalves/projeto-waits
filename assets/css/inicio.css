@@ -6,7 +6,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
 } */
 
-section.carrossel {
+.carrossel {
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -35,6 +35,7 @@ section.carrossel {
 
 .slide-box img {
     width: 100%;
+    height: 100%;
 }
 
 .nav-manual, .nav-auto {
@@ -45,10 +46,10 @@ section.carrossel {
     justify-content: center;
 }
 
-.nav-manual .manual-btn, .nav-auto div {
+.nav-manual .manual-btn, .nav-auto {
     border: 1px solid #ffffff;
-    width: 12px;  
-    height: 12px;
+    width: 15px;  
+    height: 15px;
     border-radius: 50%;
     box-sizing: border-box; /* garante que a borda não altere o tamanho */
     cursor: pointer; /* quando o usuário passar o mouse por cima das bolinhas vira o dedinho de clicar */
@@ -63,6 +64,7 @@ descentralizada */
 
 .nav-manual .manual-btn:hover { /* o hover é pra quando o usuário passar o mouse por cima */
     background-color: #fbfbfc;
+    size: scale(1.1);
 }
 
 /* faz com que quando os botões forem apertados, mude de cor. o ~ permite estilizar um elemento quando ele é precedido por um elemento específico, 
@@ -80,4 +82,3 @@ desde que ambos compartilhem o mesmo pai */
 #radio3:checked ~ .primeiro {
     margin-left: -50%;
 }
-
