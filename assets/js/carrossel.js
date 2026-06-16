@@ -1,5 +1,6 @@
 let radio = document.querySelector('.manual-btn');
 let cont = 1; // contador das imagens
+const segundos = 5000;
 
 document.getElementById('radio1').checked = true; 
 
@@ -7,7 +8,7 @@ document.getElementById('radio1').checked = true;
 setInterval(() => {
     cont++;
     proximaImagem();
-}, 5000);
+}, segundos);
 
 function proximaImagem() {
 
