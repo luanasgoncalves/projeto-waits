@@ -6,75 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAITS - Página Inicial</title>
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="javascript/carrossel.js" defer></script>
+    <link rel="shortcut icon" href="/assets/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/inicio.css">
 
 </head>
 <body>
-
+    <div id="ondinhas"></div>
     <header>
         <nav class="navbar">
-            <a href="./"><img src="./assets/img/logo.svg" id="logo" alt="logo waits"><img src="./assets/img/logotipo.svg" id="logotipo" alt="logotipo waits"><h1>Projeto Waits - Página Inicial</h1></a>
+            <a href="/"><img src="/assets/img/logo.svg" id="logo" alt="logo waits"><img src="/assets/img/logotipo.svg" id="logotipo" alt="logotipo waits"><h1>Projeto Waits - Página Inicial</h1></a>
             <ul class="navbar">
-                <li><a href="./paginas/projeto.html" class="link">História do Projeto</a></li>
-                <li><a href="./paginas/publicacoes.html" class="link">Publicações</a></li>
-                <li><a href="./paginas/relatorios.html" class="link">Relatórios</a></li>
-                <li><a href="./paginas/prototipos.html" class="link">Protótipos</a></li>
-                <li><a href="./paginas/contato.html" class="link">Fale Conosco</a></li>
+                <li><a href="/paginas/sensores.html" class="link">Sensores</a></li>
+                <li><a href="/paginas/projeto.html" class="link">História do Projeto</a></li>
+                <li><a href="/paginas/publicacoes.html" class="link">Publicações</a></li>
+                <li><a href="/paginas/contato.html" class="link">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- <div id="carrossel"></div> -->
         <!-- seção que engloba todo o carrossel -->
          <section class="carrossel">
-            <!-- div para o conteúdo do carrossel -->
-            <div class="carrossel-content">
-                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções 
-                 de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
-                <input type="radio" name="btn-radio" id="radio1"> <!-- usei btn por padrão mas da pra por qualquer nome -->
+                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
+                <input type="radio" name="btn-radio" id="radio1" checked> <!-- usei btn por padrão mas da pra por qualquer nome -->
                 <input type="radio" name="btn-radio" id="radio2"> 
                 <input type="radio" name="btn-radio" id="radio3"> 
-
-                <div class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
-                    <img class="imagem-desktop" src="assets/img/slide1-web.png" alt="slide 1">
-                    <img class="imagem-mobile" src="assets/img/slide1-mobile.png" alt="slide 1">
-                </div>
-                <div class="slide-box"> <!-- adicionando a segunda imagem -->
-                    <img class="imagem-desktop" src="assets/img/slide2-web.png" alt="slide 2">
-                    <img class="imagem-mobile" src="assets/img/slide2-mobile.png" alt="slide 2">
-                </div>
-                <div class="slide-box"> <!-- adicionando a terceira imagem -->
-                    <img class="imagem-desktop" src="assets/img/slide3-web.png" alt="slide 3">
-                    <img class="imagem-mobile" src="assets/img/slide3-mobile.png" alt="slide 3">
-                </div>
+                <!-- div para o conteúdo do carrossel -->
+          
+            <div class="carrossel-content">
+                <article class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
+                    <a href="/">
+                        <img class="imagem-desktop" src="/assets/img/slide1-web.png" alt="slide 1">
+                        <img class="imagem-mobile" src="/assets/img/slide1-mobile.png" alt="slide 1">
+                    </a></article>
+                <article class="slide-box"> <!-- adicionando a segunda imagem -->
+                    <a href="https://www.brasildefato.com.br/2026/04/10/fruto-de-oficinas-de-ong-curta-recupera-historia-da-ilha-do-pavao/">
+                        <img class="imagem-desktop" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
+                        <img class="imagem-mobile" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
+                    </a>
+                </article>
+                <article class="slide-box"> <!-- adicionando a terceira imagem -->
+                    <a href="/">
+                        <img class="imagem-desktop" src="/assets/img/slide3-web.png" alt="slide 3">
+                        <img class="imagem-mobile" src="/assets/img/slide3-mobile.png" alt="slide 3">
+                    </a></article>
             </div>
+            
+            <div class="nav-manual"> <!-- navegação manual pro usuário -->
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </section>
 
-            <div class="nav-auto"> <!-- nav-auto = navegação automatica. efeito das bolinhas -->
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-
-                <div class="nav-manual"> <!-- navegação manual pro usuário -->
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
+        <section class="cards" id="cards">
+            <h2>Acesse sensores em tempo real</h2>
+            <div class="cards-content">
+                <article class="card" id="card-pH"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>pH</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+                <article class="card" id="card-oxigenio"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>Oxigênio dissolvido</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+                <article class="card" id="card-turbidez"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>Turbidez</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+                <article class="card" id="card-toxicidade"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>Toxicidade</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+                <article class="card" id="card-alcalinidade"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>Alcalinidade</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+                <article class="card" id="card-condutividade"><a href="/paginas/sensores.html">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <div class="cards-text">
+                        <h3>Condutividade</h3>
+                        <p class="indices-card">ERRO!!!!!</p>
+                    </div>
+                </a></article>
+            </div>
         </section>
-        <section id="sobre">
-            <h2>O que é o Waits?</h2>
-            <p>O Projeto Waits surge a partir da pesquisa Monitoramento da qualidade da água do Delta do Jacuí, Lago Guaíba: utilização de equipamentos portáteis e de um sistema de coleta multiparâmetros de baixo custo operacional, desenvolvido em uma parceria entre o Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS), Campus Porto Alegre, e Cégep de Sherbrooke, Canadá.</p>
-        </section>
-        <section id="historia">
-            <h2>História do Projeto</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tenetur unde provident illo reiciendis ducimus vero veritatis nam iure. Voluptatibus obcaecati autem corporis numquam sit commodi magnam, modi iure dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tenetur unde provident illo reiciendis ducimus vero veritatis nam iure. Voluptatibus obcaecati autem corporis numquam sit commodi magnam, modi iure dolore.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tenetur unde provident illo reiciendis ducimus vero veritatis nam iure. Voluptatibus obcaecati autem corporis numquam sit commodi magnam, modi iure dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tenetur unde provident illo reiciendis ducimus vero veritatis nam iure. Voluptatibus obcaecati autem corporis numquam sit commodi magnam, modi iure dolore.</p>
-        </section>
-    </main>
+    </main><hr>
 
     <footer><p> &copy; 2026 - Desenvolvido por Bárbara da Silva Menger, João Vithor de Souza Baez e Luana da Silva Gonçalves</p></footer>
-    
+    <script src="/assets/js/carrossel.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>
