@@ -1,5 +1,3 @@
-function enviarFormulario() {
-
     document.addEventListener("DOMContentLoaded", () => {
 
         const input = document.querySelector("#telefone");
@@ -9,6 +7,7 @@ function enviarFormulario() {
             preferredCountries: ["br", "pt", "us"],
             separateDialCode: true
         });
+        
         input.addEventListener("keydown", function (e) {
 
             const teclasPermitidas = [
@@ -47,4 +46,3 @@ function enviarFormulario() {
             });
 
     });
-}

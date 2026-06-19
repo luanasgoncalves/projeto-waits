@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oranienbaum&display=swap');
+
+body {
+    margin: 0;
+    font-family: creato display, Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;
+    font-family: abril fatface, creato display, Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    min-height: 33vw; 
+}
+
+section {
+    margin: 40px 80px;
+}
+
+article {
+    padding: 0px 0px;
+    text-align: justify;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    min-width: 250px;
+    min-height: 150px;
+    overflow: hidden;
+} 
+
+.btn-publicacao {
+    margin-left: 80px;
+    padding: 10px;
+    color: rgb(7, 7, 7);
+    border: gray solid 1px;
+    border-radius: 5px;
+    font-size: larger;
+    cursor: pointer;
+}
