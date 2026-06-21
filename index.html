@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +8,18 @@
     <link rel="shortcut icon" href="/assets/img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/inicio.css">
-
 </head>
 <body>
     <div id="ondinhas"></div>
     <header>
-        <nav class="navbar">
-            <a href="/"><img src="/assets/img/logo.svg" id="logo" alt="logo waits"><img src="/assets/img/logotipo.svg" id="logotipo" alt="logotipo waits"><h1>Projeto Waits - Página Inicial</h1></a>
-            <ul class="navbar">
+        <nav class="navbar-container">
+            <a href="/" class="brand">
+                <img src="/assets/img/logo.svg" id="logo" alt="logo waits">
+                <img src="/assets/img/logotipo.svg" id="logotipo" alt="logotipo waits">
+                <!-- escode o h1 -->
+                <h1 class="sr-only">Projeto Waits - Página Inicial</h1>
+            </a>
+            <ul class="navbar-links">
                 <li><a href="/paginas/sensores.html" class="link">Sensores</a></li>
                 <li><a href="/paginas/projeto.html" class="link">História do Projeto</a></li>
                 <li><a href="/paginas/publicacoes.html" class="link">Publicações</a></li>
@@ -24,92 +27,100 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <!-- seção que engloba todo o carrossel -->
-         <section class="carrossel">
-                <!-- o input do tipo "radio" normalmente é usado para quando há várias opções de botão para serem clicadas, no nosso caso seriam as bolinhas no carrossel -->
-                <input type="radio" name="btn-radio" id="radio1" checked> <!-- usei btn por padrão mas da pra por qualquer nome -->
-                <input type="radio" name="btn-radio" id="radio2"> 
-                <input type="radio" name="btn-radio" id="radio3"> 
-                <!-- div para o conteúdo do carrossel -->
+        <section class="carrossel">
+            <input type="radio" name="btn-radio" id="radio1" checked> 
+            <input type="radio" name="btn-radio" id="radio2"> 
+            <input type="radio" name="btn-radio" id="radio3"> 
           
             <div class="carrossel-content">
-                <article class="slide-box primeiro"> <!-- adicionando a primeira imagem -->
+                <article class="slide-box primeiro">
                     <a href="/">
                         <img class="imagem-desktop" src="/assets/img/slide1-web.png" alt="slide 1">
                         <img class="imagem-mobile" src="/assets/img/slide1-mobile.png" alt="slide 1">
-                    </a></article>
-                <article class="slide-box"> <!-- adicionando a segunda imagem -->
+                    </a>
+                </article>
+                <article class="slide-box">
                     <a href="https://www.brasildefato.com.br/2026/04/10/fruto-de-oficinas-de-ong-curta-recupera-historia-da-ilha-do-pavao/">
                         <img class="imagem-desktop" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
                         <img class="imagem-mobile" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
                     </a>
                 </article>
-                <article class="slide-box"> <!-- adicionando a terceira imagem -->
+                <article class="slide-box">
                     <a href="/">
                         <img class="imagem-desktop" src="/assets/img/slide3-web.png" alt="slide 3">
                         <img class="imagem-mobile" src="/assets/img/slide3-mobile.png" alt="slide 3">
-                    </a></article>
+                    </a>
+                </article>
             </div>
             
-            <div class="nav-manual"> <!-- navegação manual pro usuário -->
+            <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
             </div>
         </section>
 
+        <div>
+            <canvas id="graficos-card"></canvas>
+        </div>
+
+        
         <section class="cards" id="cards">
             <h2>Acesse sensores em tempo real</h2>
             <div class="cards-content">
                 <article class="card" id="card-pH"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de pH">
                     <div class="cards-text">
                         <h3>pH</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
                 <article class="card" id="card-oxigenio"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Oxigênio">
                     <div class="cards-text">
                         <h3>Oxigênio dissolvido</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
                 <article class="card" id="card-turbidez"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Turbidez">
                     <div class="cards-text">
                         <h3>Turbidez</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
                 <article class="card" id="card-toxicidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Toxicidade">
                     <div class="cards-text">
                         <h3>Toxicidade</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
                 <article class="card" id="card-alcalinidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Alcalinidade">
                     <div class="cards-text">
                         <h3>Alcalinidade</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
                 <article class="card" id="card-condutividade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="">
+                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Condutividade">
                     <div class="cards-text">
                         <h3>Condutividade</h3>
-                        <p class="indices-card">ERRO!!!!!</p>
+                        <p class="indices-card">ERRO</p>
                     </div>
                 </a></article>
             </div>
         </section>
-    </main><hr>
-
-    <footer><p> &copy; 2026 - Desenvolvido por Bárbara da Silva Menger, João Vithor de Souza Baez e Luana da Silva Gonçalves</p></footer>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Bárbara, João e Luana</p>
+    </footer>
     <script src="/assets/js/carrossel.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

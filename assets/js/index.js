@@ -1,43 +1,33 @@
 function calcularValor(idIndice) {
-    let valorRandom;
+    let valorRandom = Math.random() * 2 - 1;
     let mostrarValor;
     let stringFormatada;
 
     switch (idIndice) {
         case "card-pH":
-            valorRandom = Math.random(-1, 1); // gera um valor aletorio
-            mostrarValor = 7 + valorRandom; // mostra o valor aleatorio no intervalo de 6 e 8
+            mostrarValor = 7 + valorRandom; // entre 6.00 e 8.00
             break;
-
         case "card-oxigenio":
-            valorRandom = Math.random(-1, 1); // PERGUNTAR PRA KAREN E PRO JOAO COMO PRECEDE AS MATEMATICS
-            mostrarValor = 7 + valorRandom; 
+            mostrarValor = 5 + (valorRandom * 2);
             break;
-
         case "card-turbidez":
-            valorRandom = Math.random(-1, 1); 
-            mostrarValor = 7 + valorRandom; 
+            mostrarValor = 10 + (valorRandom * 5);
             break;
-
         case "card-toxicidade":
-            valorRandom = Math.random(-1, 1); 
-            mostrarValor = 7 + valorRandom; 
+            mostrarValor = 0.5 + (valorRandom * 0.2);
             break;
-
         case "card-alcalinidade":
-            valorRandom = Math.random(-1, 1); 
-            mostrarValor = 7 + valorRandom; 
+            mostrarValor = 120 + (valorRandom * 20);
             break;
-
         case "card-condutividade":
-            valorRandom = Math.random(-1, 1); 
-            mostrarValor = 7 + valorRandom; 
+            mostrarValor = 150 + (valorRandom * 50);
             break;
-
         default:
+            mostrarValor = 0;
             break;
     }
 
+    return mostrarValor.toFixed(2);
     stringFormatada = `${mostrarValor}`;
     return stringFormatada;
 }
@@ -51,3 +41,28 @@ function cardValores() {
 }
 
 cardValores();
+
+const miniGraficos = document.getElementById('graficos-card');
+new Chart(miniGraficos, {
+    type: 'bar',
+    data: {
+        labels: ['pH', 'Oxigênio', 'Turbidez', 'Toxicidade', 'Alcanlinidade', 'Condutividade'], // eixo x do grafico
+        datasets: [{
+            label: 'Quantidade',
+            data: [2, 5, 8, 10, 31, 45]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        },
+        plugins: {
+
+        }
+    }
+});
+
+miniGraficos();

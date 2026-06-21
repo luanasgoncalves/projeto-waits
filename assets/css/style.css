@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -8,97 +9,149 @@ header {
     z-index: 2;
 }
 
-nav {
-    font-size: x-large;    
-}
-
 main {
     margin-top: 50px;
-    min-height: 33vw; 
+    min-height: 33vw;
 }
 
 section {
     margin: 40px 80px;
 }
 
-article {
-    padding: 0px 0px;
-    text-align: justify;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    margin: 0px;
-    min-width: 250px;
-    min-height: 150px;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+ .brand {
+    display: flex;
+    align-items: center;
 } 
 
-article:hover {
-    transform: scale(1.1);
+.navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-footer {
-    margin: 15px 0 0 0;
-    padding: 0 30px;
-    text-align: end;
+.navbar-links li {
+    padding: 10px 15px;
 }
 
-h1 {
-    margin: 0 10px;
-    font-size: 0;
-}
-
-h2 {
-    font-size: xx-large;
-}
-
-h3 {
-    font-size: x-large;
-}
-
-p {
-    font-size: larger;
-}
-
-a, a:visited {
+.link,
+.link:visited {
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
 }
 
-li {
-    padding: 10px;
-    list-style: none;
-}
-
-.navbar {
-    display: inline-flex;
-}
-
-.link:visited {
-    color:rgb(33, 32, 32);
-}
 .link:hover {
-    color: rgb(250, 244, 244);
+    color: rgb(255, 255, 255);
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.carrossel-content {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
+.slide-box {
+    width: 33.333%;
+    box-shadow: none;
+}
+
+.slide-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagem-mobile {
+    display: none;
+}
+
+.imagem-desktop {
+    display: block;
+}
+
+.cards-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+   flex-wrap: wrap; /* quebra a linha quando redimenciona a página */
+    gap: 20px;
 }
 
 .cards-content article {
     border-radius: 15px;
-    margin: 20px;
-}
-.cards-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    flex: 1 1 280px;
+    /* Alarga e encolhe conforme o espaço */
+    max-width: 350px;
+    transition: transform 0.3s;
 }
 
-.cards-text, .cards-text:visited {
-    padding: 10px 20px;
+.cards-content article:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 
 .cards-img {
-    object-fit: cover;
-    object-position: center;
     width: 100%;
-    height: 100%;
-    display: block;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cards-text {
+    padding: 15px;
+}
+
+/* remove o sublinhado e força a cor preta em qualquer estado do link do card */
+.card a, 
+.card a:visited, 
+.card a:hover, 
+.card a:active {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 #ondinhas {
@@ -106,20 +159,65 @@ li {
     z-index: 1;
     width: 100vw;
     height: 450px;
-    background: url("/assets/img/ondinhas_header.svg");
-    background-repeat: no-repeat;
+    background: url("/assets/img/ondinhas_header.svg") no-repeat;
     background-size: 100% 450px;
 }
 
-#logo {
-    margin: 20px -15px 20px 10px;
-    width: 150px;
-    max-height: 70px;
+#logo,
+#logotipo {
+    max-height: 50px;
+    width: auto;
 }
 
-#logotipo {
-    margin: 0px 0px 12px 0px;
-    padding-bottom: 30px;
-    max-width: 130px;
-    max-height: 70px;
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* --- REGRAS EXCLUSIVAS PARA CELULAR (Telas até 768px) --- */
+@media (max-width: 768px) {
+    section {
+        margin: 20px 15px;
+        /* Diminui as margens laterais no celular */
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        /* Empilha logo e menu */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        /* Links um embaixo do outro */
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .navbar-links li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* Troca as imagens do carrossel no mobile */
+    .imagem-desktop {
+        display: none;
+    }
+
+    .imagem-mobile {
+        display: block;
+    }
+
+    .cards-content article {
+        flex: 1 1 100%;
+        /* Cada card ocupa 100% da largura no celular */
+        max-width: 100%;
+    }
+
+    #ondinhas {
+        height: 250px;
+        /* Reduz o fundo decorativo */
+        background-size: 100% 250px;
+    }
 }

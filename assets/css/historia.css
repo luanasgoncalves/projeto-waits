@@ -1,8 +1,23 @@
-h1 {
-    margin: 10px 60px 10px 30px;
+body {
+    margin: 0;
+    font-family: creato display, Arial, Helvetica, sans-serif;
 }
 
 p {
-    text-align: justify;
-    margin: 10px 30px 10px 20px;
+    font-size: larger;
 }
+
+h3 {
+    font-size: x-large;
+    font-family: abril fatface, creato display, Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    min-height: 33vw; 
+}
+
+section {
+    margin: 40px 80px;
+}
+
