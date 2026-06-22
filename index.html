@@ -16,7 +16,7 @@
             <a href="/" class="brand">
                 <img src="/assets/img/logo.svg" id="logo" alt="logo waits">
                 <img src="/assets/img/logotipo.svg" id="logotipo" alt="logotipo waits">
-                <!-- escode o h1 -->
+                <!-- esconde o h1 -->
                 <h1 class="sr-only">Projeto Waits - Página Inicial</h1>
             </a>
             <ul class="navbar-links">
@@ -54,7 +54,6 @@
                     </a>
                 </article>
             </div>
-            
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
@@ -67,45 +66,52 @@
             <h2>Acesse sensores em tempo real</h2>
             <div class="cards-content">
                 <article class="card" id="card-pH"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de pH">
                     <div class="cards-text">
                         <h3>pH</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr" id="gr-ph"></canvas>
+                        <p class="cards-legenda">ideal: </p>
                     </div>
-                </a></article>
+                    </a>
+                </article>
                 <article class="card" id="card-oxigenio"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Oxigênio">
                     <div class="cards-text">
                         <h3>Oxigênio dissolvido</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr" id="gr-oxigenio"></canvas>
+                        <p class="cards-legenda">Ideal: </p>
                     </div>
                 </a></article>
                 <article class="card" id="card-turbidez"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Turbidez">
                     <div class="cards-text">
                         <h3>Turbidez</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr"></canvas>
+                        <p class="cards-legenda">Ideal: </p>
                     </div>
                 </a></article>
                 <article class="card" id="card-toxicidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Toxicidade">
                     <div class="cards-text">
                         <h3>Toxicidade</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr" id="gr-toxicidade"></canvas>
+                        <p class="cards-legenda">ideal: </p>
                     </div>
                 </a></article>
                 <article class="card" id="card-alcalinidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Alcalinidade">
                     <div class="cards-text">
                         <h3>Alcalinidade</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr" id="gr-acalinidade"></canvas>
+                        <p class="cards-legenda">ideal: </p>
                     </div>
                 </a></article>
                 <article class="card" id="card-condutividade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Condutividade">
                     <div class="cards-text">
                         <h3>Condutividade</h3>
                         <p class="indices-card">ERRO</p>
+                        <canvas class="indices-gr" id="gr-condutividade"></canvas>
+                        <p class="cards-legenda">ideal: </p>
                     </div>
                 </a></article>
             </div>
@@ -116,6 +122,7 @@
         <p>&copy; 2026 - Desenvolvido por Bárbara, João e Luana</p>
     </footer>
     <script src="/assets/js/carrossel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/assets/js/index.js"></script>
 </body>
 </html>

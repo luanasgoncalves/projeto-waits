@@ -1,3 +1,6 @@
+/* Se as alterações forem válidas pra outras páginas também é melhor usar
+elas em style.css - o código deixa de estar fazendo 2 coisas diferentes */
+
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oranienbaum&display=swap');
 
 body {
@@ -5,40 +8,37 @@ body {
     font-family: creato display, Arial, Helvetica, sans-serif;
 }
 
-p {
-    font-size: larger;
-}
-
 h3 {
     font-size: x-large;
     font-family: abril fatface, creato display, Arial, Helvetica, sans-serif;
 }
 
-main {
-    margin-top: 50px;
-    min-height: 33vw; 
-}
-
-section {
-    margin: 40px 80px;
-}
-
-article {
-    padding: 0px 0px;
+.publicacao {
+    padding: 15px 55px 35px 255px;
     text-align: justify;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    margin: 0px;
-    min-width: 250px;
+    margin: 100px 50px;
+    min-width: 30vw;
+    max-width: 50vw;
     min-height: 150px;
     overflow: hidden;
-} 
-
+}
+    
 .btn-publicacao {
-    margin-left: 80px;
+    /* margin-left: 40px; */
+    margin-top: 20px;
     padding: 10px;
     color: rgb(7, 7, 7);
     border: gray solid 1px;
     border-radius: 5px;
     font-size: larger;
     cursor: pointer;
+    position:absolute;
+    z-index: 2;
+    background-color: #4292bf;
+    text-decoration: none;
+}
+
+.btn-publicacao:hover {
+    background-color: #357599;
 }

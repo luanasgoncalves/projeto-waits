@@ -1,36 +1,7 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body {
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-}
-
-main {
-    width: 50%;
-    margin: 2% 20%;
-    margin-top: 100px;
-}
-
-nav {
-    align-items: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-ul {
-    padding: 20px;
-}
-
 .container {
+    margin: 2% 20%;
+    margin-top: 100px; 
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -40,7 +11,8 @@ ul {
     box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
-/* css pra foto */
+/* css pra foto 
+*/
 .foto img {
     width: 300px;
     height: 450px;
@@ -48,11 +20,13 @@ ul {
     border-radius: 10px;
 }
 
-/* css do formulário */
+/* css do formulário 
+*/
 form {
-    width: 400px;
+    width: 50%;
+    position: relative;
+    z-index: 2;
 }
-
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -60,9 +34,10 @@ input, textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-textarea{
+textarea {
     height: 120px;
     resize: none;
 }
@@ -89,5 +64,20 @@ button:hover {
 
 .telefone {
     width: 100%;
-    box-sizing: border-box;
+}
+
+
+/* --- REGRAS EXCLUSIVAS PARA CELULAR (Telas até 768px) --- */
+@media (max-width: 1280px) {
+
+    .foto {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+
+
 }

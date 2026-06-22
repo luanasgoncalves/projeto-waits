@@ -1,3 +1,7 @@
+article:hover {
+    transform: scale(1.1);
+}
+
 .carrossel {
     margin: 0 auto;
     width: 100%;
@@ -73,4 +77,17 @@ input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na vers
 #radio2:checked ~ .nav-manual [for="radio2"],
 #radio3:checked ~ .nav-manual [for="radio3"] {
     background-color: #ffffff;
+}
+
+.indices-gr {
+    margin-top: 10px;
+}
+
+.indices-card {
+    font-size: xx-large;
+}
+
+.card {
+    max-width: 70vw;
+
 }
