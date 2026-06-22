@@ -44,7 +44,7 @@ cardValores();
 
 const miniGraficos = document.getElementById('graficos-card');
 new Chart(miniGraficos, {
-    type: 'bar',
+    type: 'line',
     data: {
         labels: ['pH', 'Oxigênio', 'Turbidez', 'Toxicidade', 'Alcanlinidade', 'Condutividade'], // eixo x do grafico
         datasets: [{
@@ -59,10 +59,9 @@ new Chart(miniGraficos, {
                 beginAtZero: true
             }
         },
+        fill: true,
         plugins: {
 
         }
     }
 });
-
-miniGraficos();
