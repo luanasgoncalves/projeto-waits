@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/inicio.css">
 </head>
+
 <body>
     <div id="ondinhas"></div>
     <header>
@@ -30,21 +32,31 @@
 
     <main>
         <section class="carrossel">
-            <input type="radio" name="btn-radio" id="radio1" checked> 
-            <input type="radio" name="btn-radio" id="radio2"> 
-            <input type="radio" name="btn-radio" id="radio3"> 
-          
+            <input type="radio" name="btn-radio" id="radio1" checked>
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
             <div class="carrossel-content">
                 <article class="slide-box primeiro">
-                    <a href="/">
-                        <img class="imagem-desktop" src="/assets/img/slide1-web.png" alt="slide 1">
-                        <img class="imagem-mobile" src="/assets/img/slide1-mobile.png" alt="slide 1">
+                    <a
+                        href="https://www.gnu.com.br/site/noticias/ilha-do-pavao-reabertura-da-sede-deve-ocorrer-em-dezembro-1">
+                        <img class="imagem-desktop"
+                            src="https://www.gnu.com.br/uploads/noticias/ilha-do-pavao-reabertura-da-sede-deve-ocorrer-em-dezembro1722631200-g.webp"
+                            alt="slide 1">
+                        <img class="imagem-mobile"
+                            src="https://www.gnu.com.br/uploads/noticias/ilha-do-pavao-reabertura-da-sede-deve-ocorrer-em-dezembro1722631200-g.webp"
+                            alt="slide 1">
                     </a>
                 </article>
                 <article class="slide-box">
-                    <a href="https://www.brasildefato.com.br/2026/04/10/fruto-de-oficinas-de-ong-curta-recupera-historia-da-ilha-do-pavao/">
-                        <img class="imagem-desktop" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
-                        <img class="imagem-mobile" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG" alt="slide 2">
+                    <a
+                        href="https://www.brasildefato.com.br/2026/04/10/fruto-de-oficinas-de-ong-curta-recupera-historia-da-ilha-do-pavao/">
+                        <img class="imagem-desktop"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG"
+                            alt="slide 2">
+                        <img class="imagem-mobile"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ilha_do_Pav%C3%A3o%2C_Arquip%C3%A9lago%2C_Porto_Alegre%2C_Brasil_.JPG"
+                            alt="slide 2">
                     </a>
                 </article>
                 <article class="slide-box">
@@ -54,7 +66,7 @@
                     </a>
                 </article>
             </div>
-            
+
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
@@ -62,52 +74,66 @@
             </div>
         </section>
 
-        
+
         <section class="cards" id="cards">
             <h2>Acesse sensores em tempo real</h2>
             <div class="cards-content">
                 <article class="card" id="card-pH"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de pH">
-                    <div class="cards-text">
-                        <h3>pH</h3>
-                        <p class="indices-card">ERRO</p>
-                    </div>
-                </a></article>
+                        <div>
+                            <canvas id="graficos-card-pH" style="width: 600px; max-width: 800px; max-height: 500px;"></canvas>
+                        </div>
+                        <canvas class=alt="Sensor de pH">
+                            <div class="cards-text">
+                                <h3>pH</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
                 <article class="card" id="card-oxigenio"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Oxigênio">
-                    <div class="cards-text">
-                        <h3>Oxigênio dissolvido</h3>
-                        <p class="indices-card">ERRO</p>
+                    <div>
+                        <canvas id="graficos-card" style="width: 600px; max-width: 800px; max-height: 500px;"></canvas>
                     </div>
-                </a></article>
+                    <canvas class=alt="Sensor de Oxigênio"></canvas>    
+                            <div class="cards-text">
+                                <h3>Oxigênio dissolvido</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
                 <article class="card" id="card-turbidez"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Turbidez">
-                    <div class="cards-text">
-                        <h3>Turbidez</h3>
-                        <p class="indices-card">ERRO</p>
-                    </div>
-                </a></article>
+                        <canvas class="cards-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s"
+                            alt="Sensor de Turbidez">
+                            <div class="cards-text">
+                                <h3>Turbidez</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
                 <article class="card" id="card-toxicidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Toxicidade">
-                    <div class="cards-text">
-                        <h3>Toxicidade</h3>
-                        <p class="indices-card">ERRO</p>
-                    </div>
-                </a></article>
+                        <canvas class="cards-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s"
+                            alt="Sensor de Toxicidade">
+                            <div class="cards-text">
+                                <h3>Toxicidade</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
                 <article class="card" id="card-alcalinidade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Alcalinidade">
-                    <div class="cards-text">
-                        <h3>Alcalinidade</h3>
-                        <p class="indices-card">ERRO</p>
-                    </div>
-                </a></article>
+                        <canvas class="cards-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s"
+                            alt="Sensor de Alcalinidade">
+                            <div class="cards-text">
+                                <h3>Alcalinidade</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
                 <article class="card" id="card-condutividade"><a href="/paginas/sensores.html">
-                    <img class="cards-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s" alt="Sensor de Condutividade">
-                    <div class="cards-text">
-                        <h3>Condutividade</h3>
-                        <p class="indices-card">ERRO</p>
-                    </div>
-                </a></article>
+                        <canvas class="cards-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnILpdEGvLtLoFItZqHGNuKiWC3wI6uLE_iQ&s"
+                            alt="Sensor de Condutividade">
+                            <div class="cards-text">
+                                <h3>Condutividade</h3>
+                                <p class="indices-card">ERRO</p>
+                            </div>
+                    </a></article>
             </div>
         </section>
     </main>
@@ -115,7 +141,9 @@
     <footer>
         <p>&copy; 2026 - Desenvolvido por Bárbara, João e Luana</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/assets/js/carrossel.js"></script>
     <script src="/assets/js/index.js"></script>
 </body>
+
 </html>
