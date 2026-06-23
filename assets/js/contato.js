@@ -35,13 +35,13 @@
 
         document.getElementById("formulario")
             .addEventListener("submit", function (e) {
-
+                /*
                 if (!iti.isValidNumber()) {
                     e.preventDefault();
                     alert("Digite um telefone válido.");
                     return;
                 }
-
+                */
                 alert("Formulário enviado com sucesso!");
             });
 
