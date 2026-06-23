@@ -147,3 +147,62 @@ new Chart(ctx, {
         }
     }
 });
+function criaMiniGraficoPh() {
+    
+    new Chart(miniGraficos, {
+        type: 'line',
+        data: {
+            labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'], // eixo x do grafico
+            datasets: [{
+                label: "data",
+                data: [7.5, 7.2, 7.1, 7.7, 7.3, 7.6, 7.0 ],
+            }],
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    max: 8,
+                    min: 6,
+                    
+                }
+            },
+            fill: false,
+            plugins: {
+
+            }
+        }
+    });
+}
+
+function criaMiniGraficoOxi() {
+    const miniGraficoOxi = document.getElementById('graficos-card-oxigenio');
+    new Chart(miniGraficos, {
+        type: 'line',
+        data: {
+            labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'], 
+            datasets: [{
+                label: "data",
+                data: [4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8 ],
+            }],
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    max: 8,
+                    min: 6,
+                    
+                }
+            },
+            fill: false,
+            plugins: {
+
+            }
+        }
+    });
+}
+
+const miniGraficoPh = document.getElementById('graficos-card-pH');
+criaMiniGraficoPh();
+criaMiniGraficoOxi()
