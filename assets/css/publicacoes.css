@@ -8,9 +8,17 @@ body {
     font-family: creato display, Arial, Helvetica, sans-serif;
 }
 
+main {
+    margin-top: 100px;
+    margin-bottom: 30px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 33vw;   
+}
+
 h3 {
     font-size: x-large;
-    font-family: abril fatface, creato display, Arial, Helvetica, sans-serif;
+    font-family: creato display, Arial, Helvetica, sans-serif;
 }
 
 .publicacao {
@@ -35,10 +43,10 @@ h3 {
     cursor: pointer;
     position:absolute;
     z-index: 2;
-    background-color: #4292bf;
+    background-color: #0645b1;
     text-decoration: none;
 }
 
 .btn-publicacao:hover {
-    background-color: #357599;
+    background-color: #1B59F8;
 }

@@ -106,8 +106,16 @@ function criarGrafico(idIndice, cardGr) {
     }
 });
 }
-
-
+/*
+    return [
+      { key: 'ph',   dec: 2, unit: '',      pt: 'pH',                  ideal: [6.5, 8.5], base: 7.4, amp: 0.7, color: '#1aa3a3' },
+      { key: 'do',   dec: 1, unit: 'mg/L',  pt: 'Oxigênio dissolvido', ideal: [5, 12],    base: 7.8, amp: 1.6, color: '#0a8a8a' },
+      { key: 'turb', dec: 0, unit: 'NTU',   pt: 'Turbidez',            ideal: [0, 25],    base: 18,  amp: 9,   color: '#2f9c86' },
+      { key: 'tox',  dec: 0, unit: 'idx',   pt: 'Toxicidade',          ideal: [0, 30],    base: 22,  amp: 11,  color: '#5a9a7a' },
+      { key: 'alk',  dec: 0, unit: 'mg/L',  pt: 'Alcalinidade',        ideal: [20, 120],  base: 64,  amp: 22,  color: '#1f8f8f' },
+      { key: 'cond', dec: 0, unit: 'µS/cm', pt: 'Condutividade',       ideal: [50, 300],  base: 182, amp: 55,  color: '#2599b0' }
+    ];
+*/
 function cardValores() {
     let listaCards = document.querySelectorAll("#cards .card"); // querySelector varre um objeto html e retorna todas as ocorrencias do seletor indicado
     listaCards.forEach((card, i) => { // index é uma variavel auxiliar
@@ -118,9 +126,9 @@ function cardValores() {
     });
 }   
 
-cardValores();
+cardValores();  
 
-const ctx = document.getElementById('graficos-card');
+const ctx = document.getElementById('gr-principal');
 new Chart(ctx, {
     type: 'line',
     data: {
@@ -128,11 +136,11 @@ new Chart(ctx, {
         datasets: [ {    
             label: 'pH',
             data: [8, 6.5, 7, 8, 8.5, 6.9],
-        }]
-    },
-    options: {
-        responsive: true,
-        scales: {
+            }]
+            },
+            options: {
+                responsive: true,
+                scales: {
             y: { } },
         fill: true,
         plugins: { 
@@ -143,12 +151,13 @@ new Chart(ctx, {
             },
             legend: {
                 display: false
-            }
+                }
         }
     }
-});
+    });
+
+/*
 function criaMiniGraficoPh() {
-    
     new Chart(miniGraficos, {
         type: 'line',
         data: {
@@ -206,3 +215,4 @@ function criaMiniGraficoOxi() {
 const miniGraficoPh = document.getElementById('graficos-card-pH');
 criaMiniGraficoPh();
 criaMiniGraficoOxi()
+*/

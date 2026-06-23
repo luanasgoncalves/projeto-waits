@@ -1,0 +1,59 @@
+body {
+    font-family: creato display, Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;
+    font-family: abril fatface, creato display, Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 30px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 33vw;   
+    max-width: 80%; 
+}   
+
+section {
+    margin: 40px 0px;
+}
+
+figure {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.equipe-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;   
+}
+
+.nome-membro {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waits - Gráficos e Relatórios</title>
-        <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/img/menu/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sensores.css">
 </head>
@@ -12,24 +12,79 @@
     <div id="ondinhas"></div>
     <header>
         <nav class="navbar-container">
-        <a href="/" class="brand">
-                <img src="../assets/img/logo.svg" id="logo" alt="logo waits">
-                <img src="../assets/img/logotipo.svg" id="logotipo" alt="logotipo waits">
+            <a href="/" class="brand">
+                <img src="../assets/img/menu/logo.svg" id="logo" alt="logo waits">
+                <img src="../assets/img/menu/logotipo.svg" id="logotipo" alt="logotipo waits">
                 <h1 class="sr-only">Sensores</h1>
             </a>
             <ul class="navbar-links">
                 <li><a href="/paginas/sensores.html" class="link">Sensores</a></li>
-                <li><a href="/paginas/projeto.html" class="link">História do Projeto</a></li>
+                <li><a href="/paginas/sobre.html" class="link">Sobre o Projeto</a></li>
                 <li><a href="/paginas/publicacoes.html" class="link">Publicações</a></li>
                 <li><a href="/paginas/contato.html" class="link">Fale Conosco</a></li> </ul>
-        </nav>
-    </header>
+            </nav>
+        </header>
     <main>
-        <div id="grafico-principal">
-            <canvas id="graficos-card" style="width: 600px; max-width: 800px; max-height: 500px;"></canvas>    
+        <h2>Gráficos de sensores</h2>
+        <div class="container">
+            <section id="grafico-principal">
+                <canvas id="gr-principal"></canvas>    
+            </section>
+                
+            <section id="cards">
+                <div id="graficos-secundarios">
+                    <article class="card" id="card-pH"><a href="/paginas/sensores.html">
+                        <div class="cards-text">
+                            <h3>pH</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr" id="gr-ph"></canvas>
+                            <p class="cards-legenda">ideal: </p>
+                        </div>
+                    </a></article>
+                    <article class="card" id="card-oxigenio"><a href="/paginas/sensores.html">
+                        <div class="car ds-text">
+                            <h3>Oxigênio dissolvido</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr" id="gr-oxigenio"></canvas>
+                            <p class="cards-legenda">Ideal: </p>
+                        </div>
+                    </a></article>
+                    <article class="card" id="card-turbidez"><a href="/paginas/sensores.html">
+                        <div class="cards-text">
+                            <h3>Turbidez</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr"></canvas>
+                            <p class="cards-legenda">Ideal: </p>
+                        </div>
+                    </a></article>
+                    <article class="card" id="card-toxicidade"><a href="/paginas/sensores.html">
+                        <div class="cards-text">
+                            <h3>Toxicidade</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr" id="gr-toxicidade"></canvas>
+                            <p class="cards-legenda">ideal: </p>
+                        </a></article>
+                    <article class="card" id="card-alcalinidade"><a href="/paginas/sensores.html">
+                        <div class="cards-text">
+                            <h3>Alcalinidade</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr" id="gr-acalinidade"></canvas>
+                            <p class="cards-legenda">ideal: </p>
+                        </div>
+                    </a></article>
+                    <article class="card" id="card-condutividade"><a href="/paginas/sensores.html">
+                        <div class="cards-text">
+                            <h3>Condutividade</h3>
+                            <p class="indices-card">ERRO</p>
+                            <canvas class="indices-gr" id="gr-condutividade"></canvas>
+                            <p class="cards-legenda">ideal: </p>
+                        </div>
+                    </a></article>
+                </div>
+            </section>
         </div>
     </main><hr>
-    <footer><p> &copy; 2026 - Desenvolvido por bolsistas do IFRS</p></footer>
+    <footer><p>&copy; 2026 - Desenvolvido por Bárbara, João e Luana</p></footer>
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/assets/js/index.js"></script>

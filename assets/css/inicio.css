@@ -18,7 +18,8 @@ article:hover {
     display: flex;
 }
 
-input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
+input, 
+.imagem-mobile { /* serve para esconder o radio e a imagem mobile na versao desktop */
     display: none;
 }
 
@@ -79,6 +80,7 @@ input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na vers
     background-color: #ffffff;
 }
 
+
 .indices-gr {
     margin-top: 10px;
 }
@@ -89,5 +91,4 @@ input, .imagem-mobile { /* serve para esconder o radio e a imagem mobile na vers
 
 .card {
     max-width: 70vw;
-
 }
