@@ -166,6 +166,24 @@ footer {
     color: black;
 }
 
+h2 {
+    font-size: 2rem;
+
+}
+.titulo-carrosel {  
+    margin-left: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
 #ondinhas {
     position: absolute;
     z-index: 1;
