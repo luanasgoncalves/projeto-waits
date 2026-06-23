@@ -1,47 +1,53 @@
-    main {
-        width: 100%;
-        margin: 10px 0;
-        margin-top: 150px;
-    }
+main {
+    width: 100%;
+    margin: 150px 20px 10px 20px; /* Merged margins into single shorthand */
+    box-sizing: border-box;       /* Prevents 100% width from overflowing out of screen */
+}
 
-    section {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 20px;
-    }
+section {
+    display: flex;                /* FIX: Added missing flex container activation */
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
 
-    article {
-        width: 100%;
-        margin: 10px 0;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
+article {
+    width: 200px;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-    .container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
 
-    .graficos-secundarios {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    #grafico-principal {
-        width: 600px;
-        min-width: 40%;
-        width: 50%;
-        height: auto;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+.graficos-secundarios {
+    display: grid;                /* FIX: Changed from flex to grid to support template columns */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;                    /* Replaced column-gap with gap for uniform spacing */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 50%;
+    height: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#grafico-principal {
+    width: 800px;
+    min-width: 45%;
+    max-width: 55%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
