@@ -43,10 +43,10 @@ h3 {
     cursor: pointer;
     position:absolute;
     z-index: 2;
-    background-color: #0645b1;
+    background-color: #868686;
     text-decoration: none;
 }
 
 .btn-publicacao:hover {
-    background-color: #1B59F8;
+    background-color: #777777;
 }
