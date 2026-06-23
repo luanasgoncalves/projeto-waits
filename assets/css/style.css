@@ -107,27 +107,27 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
-     object-position: center; /*centraliza as imagens no carrosel*/
+     object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+     object-position: center; /* Centraliza as imagens no carrosel */
 }
 
 .imagem-mobile {
     display: none;
-     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
-     object-position: center; /*centraliza as imagens no carrosel*/
+     object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+     object-position: center; /*centraliza as imagens no carrosel */
 }
 
 .imagem-desktop {
     display: block;
-     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
-     object-position: center; /*centraliza as imagens no carrosel*/
+     object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+     object-position: center; /* Centraliza as imagens no carrosel */
 }
 
 .cards-content {
     display: flex;
     justify-content: center;
     align-items: stretch;
-   flex-wrap: wrap; /* quebra a linha quando redimenciona a página */
+   flex-wrap: wrap; /* Quebra a linha quando redimenciona a página */
     gap: 20px;
 }
 
@@ -157,7 +157,7 @@ footer {
     padding: 15px;
 }
 
-/* remove o sublinhado e força a cor preta em qualquer estado do link do card */
+/* Remove o sublinhado e força a cor preta em qualquer estado do link do card */
 .card a, 
 .card a:visited, 
 .card a:hover, 
@@ -199,7 +199,7 @@ p {
     width: auto;
 }
 
-
+/* Usado para responsividade no celular */
 @media (max-width: 1024px) {
     
     .navbar-container {
@@ -217,7 +217,7 @@ p {
 }
 
 
-/* --- REGRAS EXCLUSIVAS PARA CELULAR (Telas até 768px) --- */
+
 @media (max-width: 768px) {
     
     section {
@@ -251,14 +251,14 @@ p {
     /* Troca as imagens do carrossel no mobile */
     .imagem-desktop {
         display: none;
-        object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
-        object-position: center; /*centraliza as imagens no carrosel*/
+        object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+        object-position: center; /* Centraliza as imagens no carrosel */
     }
 
     .imagem-mobile {
         display: block;
-        object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
-        object-position: center; /*centraliza as imagens no carrosel*/
+        object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+        object-position: center; /* Centraliza as imagens no carrosel */
     }
 
     .cards-content article {
