@@ -127,7 +127,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: stretch;
-   flex-wrap: wrap; /* Quebra a linha quando redimenciona a página */
+    flex-wrap: wrap; /* Quebra a linha quando redimenciona a página */
     gap: 20px;
 }
 
@@ -143,14 +143,6 @@ footer {
 
 .cards-content article:hover {
     transform: translateY(-5px) scale(1.02);
-}
-
-.cards-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
 .cards-text {
