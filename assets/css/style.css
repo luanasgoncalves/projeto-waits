@@ -88,14 +88,20 @@ section {
     width: 100%;
     height: auto;
     display: block;
+     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
+     object-position: center; /*centraliza as imagens no carrosel*/
 }
 
 .imagem-mobile {
     display: none;
+     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
+     object-position: center; /*centraliza as imagens no carrosel*/
 }
 
 .imagem-desktop {
     display: block;
+     object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
+     object-position: center; /*centraliza as imagens no carrosel*/
 }
 
 .cards-content {
@@ -223,10 +229,14 @@ footer {
     /* Troca as imagens do carrossel no mobile */
     .imagem-desktop {
         display: none;
+        object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
+        object-position: center; /*centraliza as imagens no carrosel*/
     }
 
     .imagem-mobile {
         display: block;
+        object-fit: cover; /*nã distorce a imagem cobrindo o espaço */
+        object-position: center; /*centraliza as imagens no carrosel*/
     }
 
     .cards-content article {
