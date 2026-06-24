@@ -106,16 +106,7 @@ function criarGrafico(idIndice, cardGr) {
     }
 });
 }
-/*
-    return [
-      { key: 'ph',   dec: 2, unit: '',      pt: 'pH',                  ideal: [6.5, 8.5], base: 7.4, amp: 0.7, color: '#1aa3a3' },
-      { key: 'do',   dec: 1, unit: 'mg/L',  pt: 'Oxigênio dissolvido', ideal: [5, 12],    base: 7.8, amp: 1.6, color: '#0a8a8a' },
-      { key: 'turb', dec: 0, unit: 'NTU',   pt: 'Turbidez',            ideal: [0, 25],    base: 18,  amp: 9,   color: '#2f9c86' },
-      { key: 'tox',  dec: 0, unit: 'idx',   pt: 'Toxicidade',          ideal: [0, 30],    base: 22,  amp: 11,  color: '#5a9a7a' },
-      { key: 'alk',  dec: 0, unit: 'mg/L',  pt: 'Alcalinidade',        ideal: [20, 120],  base: 64,  amp: 22,  color: '#1f8f8f' },
-      { key: 'cond', dec: 0, unit: 'µS/cm', pt: 'Condutividade',       ideal: [50, 300],  base: 182, amp: 55,  color: '#2599b0' }
-    ];
-*/
+
 function cardValores() {
     let listaCards = document.querySelectorAll("#cards .card"); // querySelector varre um objeto html e retorna todas as ocorrencias do seletor indicado
     listaCards.forEach((card, i) => { // index é uma variavel auxiliar
@@ -155,64 +146,4 @@ new Chart(ctx, {
         }
     }
     });
-
-/*
-function criaMiniGraficoPh() {
-    new Chart(miniGraficos, {
-        type: 'line',
-        data: {
-            labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'], // eixo x do grafico
-            datasets: [{
-                label: "data",
-                data: [7.5, 7.2, 7.1, 7.7, 7.3, 7.6, 7.0 ],
-            }],
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    max: 8,
-                    min: 6,
-                    
-                }
-            },
-            fill: false,
-            plugins: {
-
-            }
-        }
-    });
-}
-
-function criaMiniGraficoOxi() {
-    const miniGraficoOxi = document.getElementById('graficos-card-oxigenio');
-    new Chart(miniGraficos, {
-        type: 'line',
-        data: {
-            labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'], 
-            datasets: [{
-                label: "data",
-                data: [4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8 ],
-            }],
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    max: 8,
-                    min: 6,
-                    
-                }
-            },
-            fill: false,
-            plugins: {
-
-            }
-        }
-    });
-}
-
-const miniGraficoPh = document.getElementById('graficos-card-pH');
-criaMiniGraficoPh();
-criaMiniGraficoOxi()
-*/
+    

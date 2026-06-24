@@ -16,19 +16,19 @@ main {
     min-height: 33vw;   
 }
 
-h3 {
+h3 {    
     font-size: x-large;
     font-family: creato display, Arial, Helvetica, sans-serif;
 }
 
 article {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
   
 .btn-publicacao {
     /* margin-left: 40px; */
-    margin: 8px;
-    padding: 8px;
+    margin: 15px;
+    padding: 10px;
     color: rgb(7, 7, 7);
     border: gray solid 1px;
     border-radius: 5px;

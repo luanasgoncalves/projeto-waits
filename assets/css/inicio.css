@@ -9,13 +9,13 @@ article:hover {
     padding: 0;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
 .carrossel-content {
     width: 400%;
     height: 600px;
     display: flex;
+    box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
 input, 
@@ -34,6 +34,11 @@ input,
 .slide-box img {
     width: 100%;
     height: 100%;
+}
+
+.slide-title {
+    clip-path: inset(50%);
+    position: absolute;
 }
 
 .nav-manual {
@@ -61,7 +66,7 @@ input,
 
 .nav-manual .manual-btn:hover { /* o hover é pra quando o usuário passar o mouse por cima */
     background-color: #fbfbfc;
-    size: scale(1.1);
+    
 }
 
 #radio1:checked ~ .carrossel-content .primeiro {
@@ -87,6 +92,7 @@ input,
 
 .indices-card {
     font-size: xx-large;
+    margin: 0 20px;
 }
 
 .card {

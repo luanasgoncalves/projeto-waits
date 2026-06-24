@@ -38,14 +38,19 @@ footer {
     text-align: center;
 }
 
+article h3 {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
 .sr-only {
+    clip-path: inset(50%);
     position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
@@ -107,8 +112,8 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-     object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
-     object-position: center; /* Centraliza as imagens no carrosel */
+    object-fit: cover; /* Não distorce a imagem cobrindo o espaço */
+    object-position: center; /* Centraliza as imagens no carrosel */
 }
 
 .imagem-mobile {
@@ -133,10 +138,9 @@ footer {
 
 .cards-content article {
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: #fff;
-    flex: 1 1 280px;
-    /* Alarga e encolhe conforme o espaço */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 280px; /* Alarga e encolhe conforme o espaço */
     max-width: 350px;
     transition: transform 0.3s;
 }
@@ -148,6 +152,8 @@ footer {
 .cards-text {
     padding: 15px;
 }
+
+
 
 /* Remove o sublinhado e força a cor preta em qualquer estado do link do card */
 .card a, 
